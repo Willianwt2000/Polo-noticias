@@ -20,16 +20,15 @@
 
     <div class="back">
       <div class="menu container">
-        <a href="#" class="logo"><img src="./img/logo_podcas.jpg" alt="logo_polo podcast"></a> 
+        <a href="#" class="logo"><img src="./img/logo_podcas.jpg" alt="logo_polo podcast"></a>
         <div class="slogan">
-          <h2>POLO PODCAST</h2>
-          <!-- <p>Noticias que eleven tu sentido</p> -->
+          <h2 class="slogan_h2">POLO PODCAST</h2>
+          <p class="slogan_p">Noticias que eleven tu sentido</p>
         </div>
         <input type="checkbox" id="menu">
 
         <label for="menu">
           <!-- <img src="./img/menu.png" alt="" class="menu-icono"> -->
-
           <div class="bars__menu">
             <span class="line1__bars-menu"></span>
             <span class="line2__bars-menu"></span>
@@ -41,6 +40,9 @@
 
         <nav class="navbar">
           <ul class="lista-menu">
+            <li class="item-menu">
+              <a class="enlace-menu" aria-current="page" href="#news">Actualidad</a>
+            </li>
             <li class="item-menu">
               <a class="enlace-menu" aria-current="page" href="#genral">Internacionales</a>
             </li>
@@ -54,7 +56,16 @@
               <a class="enlace-menu" aria-current="page" href="#tehnology">Tecnología</a>
             </li>
             <li class="item-menu">
+              <a class="enlace-menu" aria-current="page" href="#culture">Cultura</a>
+            </li>
+            <li class="item-menu">
               <a class="enlace-menu" href="#entertainment">Entretenimiento</a>
+            </li>
+            <li class="item-menu">
+              <a class="opinion" href="#entertainment">Opinion</a>
+            </li>
+            <li class="item-menu">
+              <a class="tv" href="#entertainment">TV</a>
             </li>
             <li class="item-menu">
               <a class="enlace-menu" href="#Polo_podcast">Blog</a>
@@ -75,15 +86,29 @@
     </section>
   </main> -->
 
-  <!-- <footer class="mt-5">
+  <footer class="mt-5">
+    <section class="logos_slogan">
+      <img src="./img/logo_podcas.jpg" alt="">
+      <div class="contenedor">
+        <h5 class="marca text-white me-auto ms-auto">POLO<span class="text-warning">PODCAST</span></h5>
+        <p>Noticias que eleven tus sentidos</p>
+      </div>
+    </section>
+
+ 
+
     <div>
-      <nav class="barra-navegacion">
-        <div class="contenedor">
-          <h5 class="marca text-white me-auto ms-auto">POLO<span class="text-warning">PODCAST</span></h5>
-        </div>
+      <nav class="barra-navegacion ">
+        <ul class="redes-sociales list-unstyled d-flex justify-content-end">
+          <li class="me-3"><a href="#"><i class="bi bi-instagram"></i></a></li>
+          <li class="me-3"><a href="#"><i class="bi bi-youtube"></i></a></li>
+          <li class="me-3"><a href="#"><i class="bi bi-facebook"></i></a></li>
+          <li><a href="#"><i class="bi bi-whatsapp"></i></a></li>
+        </ul>
       </nav>
     </div>
-  </footer> -->
+  </footer>
+
 
   <!-- <script src="app.js"></script> -->
   <script src="./js/menu.js"></script>

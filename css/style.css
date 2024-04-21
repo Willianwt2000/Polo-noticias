@@ -22,7 +22,7 @@ body {
 }
 
 .container {
-  max-width: 1100px;
+  max-width: 1500px;
   margin: 0 auto;
 }
 
@@ -75,9 +75,87 @@ body {
   display: none;
 }
 
-.sloga {
-  display: none;
+.slogan_h2, .slogan_p{
+  color: #fff;
+  text-align: center;
 }
+/* ?Footer */
+footer {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #063c44fd;
+  padding: px 0;
+  
+}
+
+.logos_slogan {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 10px;
+  gap: 10px;
+}
+
+.logos_slogan .contenedor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+  .container h5 {
+    font-size: 1.6rem;
+  }
+.contenedor p {
+  color: #fff;
+  font-size: 1.3rem;
+}
+
+
+.contenedor {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.barra-navegacion {
+  width: 100%;
+}
+
+.marca {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.text-warning {
+  color: #ffc107;
+}
+
+/* Redes sociales */
+.redes-sociales a {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.bi-whatsapp {
+  color: #25D366;
+}
+.bi-facebook {
+  color:  #1877F2;
+}
+.bi-youtube {
+  color:  #FF0000;
+}
+
+.bi-instagram {
+  color: #833ab4;;
+}
+.redes-sociales a:hover {
+  color: #ffc107;
+}
+
 
 @media(max-width: 991px) {
   .menu {
@@ -85,28 +163,55 @@ body {
 
   }
 
-  .sloga {
-    display: block;
-  }
-  img{
+  .slogan_p {
     display: none;
   }
+
+  .slogan {
+    position: relative;
+    left: 100px;
+
+  }
+
+  .slogan_h2 {
+    font-size: 1.1rem;
+  }
+
+  .logo {
+    position: absolute;
+    width: 80px;
+   
+    
+  }
+
+
+  img {
+    width: 100%;
+  }
+
+
   .menu label {
     display: initial;
   }
 
   .back {
     padding: 45px 0;
+
   }
 
-  .menu .navbar {
+   .menu .navbar {
     position: absolute;
     top: 100%;
-    left: 0;
+    left: initial;
     right: 0;
+    width: 80%;
     background-color: #2a394f;
     display: none;
-  }
+    opacity: .9;
+  } 
+
+ 
+
 
   .menu .navbar ul li {
     width: 100%;
@@ -116,7 +221,7 @@ body {
     display: initial;
   }
 
-
+  
 
   /* ?menu */
   .bars__menu {
@@ -137,7 +242,11 @@ body {
     margin-top: 6px;
     transform-origin: 0px 100%;
     transition: all 300ms;
-  }
+    -webkit-transition: all 300ms;
+    -moz-transition: all 300ms;
+    -ms-transition: all 300ms;
+    -o-transition: all 300ms;
+}
   
   .activeline1__bars-menu {
     transform: rotate(45deg) translate(-2px, 1px);
