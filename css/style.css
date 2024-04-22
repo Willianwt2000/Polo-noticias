@@ -13,22 +13,29 @@ img {
 }
 
 header {
+  padding: auto;
   height: 200px;
 }
 
 body {
   background: linear-gradient(90deg, rgb(249, 142, 142) 25%, rgb(239, 209, 209) 73%);
   font-family: 'Poppins', sans-serif;
+  min-height: 100vh;
+  padding-bottom: 80px;
 }
 
 .container {
-  max-width: 1500px;
+  max-width: 1800px;
   margin: 0 auto;
 }
 
 .back {
-  padding: 32px 0;
+  padding: 35px 0;
   background-color: #b13b3b;
+}
+
+.logo {
+  margin-top: 5px;
 }
 
 .menu {
@@ -42,7 +49,53 @@ body {
   z-index: 1000;
 }
 
+/* ? Imput de buscar */
 
+.barra_deBusqueda {
+  position: absolute;
+  top: 65px;
+  width: 100%;
+  margin-top: 5px;
+  padding: 10px;
+
+}
+
+section .container {
+  width: 100%;
+  position: absolute;
+  left: 73%;
+
+}
+input {
+  width: 350px;
+  padding: 15px;
+  padding-right: 35px;
+  border-radius: 40px 0 0 40px;
+
+  border: 0;
+  outline: none;
+}
+
+.barra_deBusqueda button {
+  background-color: #b13b3b;
+  width: 45px;
+  height: 45px;
+  padding: 10px;
+  position: absolute;
+  border: 0;
+  border-radius: 0 40px 40px 0;
+  cursor: pointer;
+  height: 46px;
+  width: 64px;
+  margin: 0;
+}
+
+
+.bi-search {
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  font-size: 1.5rem;
+}
 
 .menu .navbar ul li {
   position: relative;
@@ -79,14 +132,31 @@ body {
   color: #fff;
   text-align: center;
 }
+
+/*? Main */
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ?Footer */
 footer {
-  position: relative;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #063c44fd;
-  padding: px 0;
+  background-color: #0e3238fd;
+  padding: 10px 0;
   
 }
 
@@ -94,6 +164,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   flex-direction: column;
   margin: 10px;
   gap: 10px;
@@ -112,7 +183,31 @@ footer {
   color: #fff;
   font-size: 1.3rem;
 }
+.navegacion {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  gap: 10px;
+  padding: 15px;
+}
 
+.contactanos {
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.derechosreservados {
+  color: #fff;
+}
+div .barra-navegacion ul{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 30px;
+  margin-right: 15px;
+}
 
 .contenedor {
   display: flex;
@@ -126,30 +221,34 @@ footer {
 
 .marca {
   font-size: 1.5rem;
-  color: #fff;
+  color: #ffc107;
 }
 
 .text-warning {
-  color: #ffc107;
+  color: #fff;
 }
 
 /* Redes sociales */
 .redes-sociales a {
+  font-size: 2rem;
   color: white;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
 }
 
 .bi-whatsapp {
   color: #25D366;
 }
 .bi-facebook {
+  font-size: 2rem;
   color:  #1877F2;
 }
 .bi-youtube {
+  font-size: 2rem;
   color:  #FF0000;
 }
 
 .bi-instagram {
+  font-size: 2rem;
   color: #833ab4;;
 }
 .redes-sociales a:hover {
