@@ -21,7 +21,7 @@ body {
   background: linear-gradient(90deg, rgb(249, 142, 142) 25%, rgb(239, 209, 209) 73%);
   font-family: 'Poppins', sans-serif;
   min-height: 100vh;
-  padding-bottom: 80px;
+  /* padding-bottom: 80px; */
 }
 
 .container {
@@ -134,10 +134,54 @@ input {
 }
 
 /*? Main */
+main {
+  padding-bottom: 60px; /* Ajusta el valor según la altura de tu footer */
+}
 
 
 
+/* Estilos para las noticias tipo card */
+#noticias {
+  display: flex; /* Utilizar flexbox para mostrar las tarjetas en línea */
+  flex-wrap: wrap; /* Permitir que las tarjetas se envuelvan a la siguiente línea si no caben en la misma */
+  justify-content: space-between; /* Espaciar uniformemente las tarjetas a lo largo del contenedor */
+}
 
+.item {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  overflow: hidden;
+  width: calc(33.33% - 20px); /* Establecer el ancho de cada tarjeta para que haya tres tarjetas por fila con un espacio entre ellas */
+  margin-right: 20px; /* Espacio entre las tarjetas */
+}
+
+.item:last-child {
+  margin-right: 0; /* Eliminar el margen derecho de la última tarjeta en una fila */
+}
+
+.item h2 {
+  font-size: 16px;
+  margin: 10px;
+}
+
+.item img {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.info_item {
+  padding: 10px;
+  border-top: 1px solid #eee;
+}
+
+.fecha, .fuente {
+  font-size: 12px;
+  color: #666;
+}
 
 
 
@@ -148,17 +192,36 @@ input {
 
 
 /* ?Footer */
+.hidden {
+  transform: translateY(100%);
+}
+
 footer {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   width: 100%;
+  height: 170px; 
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #0e3238fd;
   padding: 10px 0;
-  
+  z-index: 1000; /* Asegurar que el footer esté por encima del contenido */
 }
+
+#btnSiguiente {
+  cursor: pointer;
+}
+
+/* footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 60px; 
+  background-color: #333; 
+  color: white;
+  text-align: center;
+} */
 
 .logos_slogan {
   display: flex;

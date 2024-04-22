@@ -28,7 +28,6 @@
         <input type="checkbox" id="menu">
 
         <label for="menu">
-          <!-- <img src="./img/menu.png" alt="" class="menu-icono"> -->
           <div class="bars__menu">
             <span class="line1__bars-menu"></span>
             <span class="line2__bars-menu"></span>
@@ -41,36 +40,42 @@
         <nav class="navbar">
           <ul class="lista-menu">
             <li class="item-menu">
-              <a class="enlace-menu" aria-current="page" href="#news">Actualidad</a>
+              <a class="enlace-menu" aria-current="page" href="#news" onclick="buscar('Actualidad')">Actualidad</a>
             </li>
             <li class="item-menu">
-              <a class="enlace-menu" aria-current="page" href="#genral">Internacionales</a>
+              <a class="enlace-menu" aria-current="page" href="#genral"
+                onclick="buscar('Internacionales')">Internacionales</a>
             </li>
             <li class="item-menu">
-              <a class="enlace-menu" aria-current="page" href="#business">Negocios</a>
+              <a class="enlace-menu" aria-current="page" href="#business" onclick="buscar('Negocios')">Negocios</a>
             </li>
             <li class="item-menu">
-              <a class="enlace-menu" href="#sports">Deportes</a>
+              <a class="enlace-menu" href="#sports" onclick="buscar('Deportes')">Deportes</a>
             </li>
             <li class="item-menu">
-              <a class="enlace-menu" aria-current="page" href="#tehnology">Tecnología</a>
+              <a class="enlace-menu" href="#education" onclick="buscar('Educación')">Educación</a>
+            </li>
+            
+            <li class="item-menu">
+              <a class="enlace-menu" aria-current="page" href="#tehnology" onclick="buscar('Tecnología')">Tecnología</a>
             </li>
             <li class="item-menu">
-              <a class="enlace-menu" aria-current="page" href="#culture">Cultura</a>
+              <a class="enlace-menu" aria-current="page" href="#culture" onclick="buscar('Cultura')">Cultura</a>
             </li>
             <li class="item-menu">
-              <a class="enlace-menu" href="#entertainment">Entretenimiento</a>
+              <a class="enlace-menu" href="#entertainment" onclick="buscar('Entretenimiento')">Entretenimiento</a>
             </li>
             <li class="item-menu">
-              <a class="opinion" href="#entertainment">Opinion</a>
+              <a class="opinion" href="#entertainment" onclick="buscar('Opinion')">Opinion</a>
             </li>
             <li class="item-menu">
-              <a class="tv" href="#entertainment">TV</a>
+              <a class="tv" href="#entertainment" onclick="buscar('TV')">TV</a>
             </li>
             <li class="item-menu">
-              <a class="enlace-menu" href="#Polo_podcast">Blog</a>
+              <a class="enlace-menu" href="#Polo_podcast" onclick="buscar('Blog')">Blog</a>
             </li>
           </ul>
+
         </nav>
 
       </div>
@@ -80,19 +85,19 @@
   </header>
   <section class="barra_deBusqueda">
     <div class="container">
-      <input type="text" placeholder="Buscar noticias">
-      <button type="button"><i class="bi bi-search"></i></button>
+      <input type="text" placeholder="Encuentra las últimas noticias aquí..." id="busqueda">
+      <button type="button" onclick="buscarTema()"><i class="bi bi-search"></i></button>
     </div>
   </section>
 
+  <!-- Seccion de noticias -->
   <main>
     <section id="noticias">
-      <div class="fila m-3" id="newsType"></div>
-      <div class="fila me-2 ms-2" id="newsdetails"></div>
+
     </section>
   </main>
 
-  <footer class="mt-5">
+  <footer class="mt-5 hidden">
     <section class="logos_slogan">
       <img src="./img/logo_podcas.jpg" alt="">
       <div class="contenedor">
@@ -100,11 +105,11 @@
         <p>Noticias que eleven tus sentidos</p>
       </div>
     </section>
-
+  
     <section>
       <p class="derechosreservados">&copy; 2024 POLO PODCAST</p>
     </section>
-
+  
     <div class="navegacion">
       <p class="contactanos">Contactanos</p>
       <nav class="barra-navegacion ">
@@ -117,10 +122,10 @@
       </nav>
     </div>
   </footer>
+  
 
-
-  <!-- <script src="app.js"></script> -->
   <script src="./js/menu.js"></script>
+  <script src="./js/app.js"></script>
 </body>
 
 </html>
