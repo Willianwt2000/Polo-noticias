@@ -142,19 +142,45 @@ main {
 
 /* Estilos para las noticias tipo card */
 #noticias {
-  display: flex; /* Utilizar flexbox para mostrar las tarjetas en línea */
-  flex-wrap: wrap; /* Permitir que las tarjetas se envuelvan a la siguiente línea si no caben en la misma */
-  justify-content: space-between; /* Espaciar uniformemente las tarjetas a lo largo del contenedor */
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding-bottom: 60px; /* Ajusta el valor según la altura de tu footer */
 }
 
+#noticias .item {
+  background-color: #eee;
+  max-width: 360px;
+  border:2px solid #ccc;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+  transition: .3s;
+}
+
+#noticias .item:hover{
+  box-shadow: 0 0 10px 5px #ccc;
+}
+#noticias .item:hover h2{
+  text-decoration: underline;
+}
+#noticias .item .info_item{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+
 .item {
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  box-shadow: 7px 7px 25px 1px rgba(0,0,0,0.06);
+  border-radius: 5px;
   overflow: hidden;
-  width: calc(33.33% - 20px); /* Establecer el ancho de cada tarjeta para que haya tres tarjetas por fila con un espacio entre ellas */
-  margin-right: 20px; /* Espacio entre las tarjetas */
+  padding-bottom: 10px;
+  background: #ffffff;
 }
 
 .item:last-child {
@@ -169,8 +195,8 @@ main {
 .item img {
   width: 100%;
   height: auto;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
 }
 
 .info_item {
@@ -211,6 +237,19 @@ footer {
 
 #btnSiguiente {
   cursor: pointer;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  text-align: center;
+  height: 30px;
+  background-color: rgb(44, 10, 78);
+
+}
+
+#noticias #btnSiguiente:hover{
+  color: #62b9b2;
 }
 
 /* footer {
