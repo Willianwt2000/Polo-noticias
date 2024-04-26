@@ -1,5 +1,5 @@
 // Definición del objeto noticias
-let cantidadDeNoticias = 15;
+let cantidadDeNoticias = 24;
 let pageFinal = cantidadDeNoticias;
 let pageInicial = 0;
 let temaActual = "Tecnología";

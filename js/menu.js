@@ -9,3 +9,12 @@ function animateBars() {
   line2__bars.classList.toggle("activeline2__bars-menu");
   line3__bars.classList.toggle("activeline3__bars-menu");
 }
+
+
+window.addEventListener('click', e => {
+  if (!event.target.closest(".lista_navegacion") && e.target !== menu && e.target !== hamburger ) {
+    menu.classList.toggle('spread')
+    
+
+  }
+})
