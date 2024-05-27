@@ -227,7 +227,7 @@ textarea.input {
 }
 
 .icon {
-  width: 28px;
+  font-size:  28px;
   margin-right: 0.7rem;
 }
 
@@ -308,12 +308,12 @@ textarea.input {
   opacity: 0.3;
 }
 
-.big-circle {
+/* .big-circle {
   position: absolute;
   width: 500px;
   height: 500px;
   border-radius: 50%;
-  background: linear-gradient(to bottom, #1cd4af, #159b80);
+  background: linear-gradient(to bottom, rgba(170, 0, 0, 0.5), #921a1ad5);
   bottom: 50%;
   right: 50%;
   transform: translate(-40%, 38%);
@@ -332,7 +332,7 @@ textarea.input {
   border-radius: 50%;
   top: calc(50% - 180px);
   left: calc(50% - 180px);
-}
+} */
 
 .square {
   position: absolute;
